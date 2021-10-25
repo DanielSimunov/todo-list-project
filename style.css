@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Nanum Pen Script', cursive;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #f8d106;
+    width: 500px;
+    min-height: 500px;
+    border-radius: 20px;
+}
+
+.page-title {
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add Task */
+.add-task {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    width: 70%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 24px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.add-task-btn {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.add-task-btn:hover {
+    background-color: #fff;
+}
+
+/* Task List */
+.select-wrapper {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#filter {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 18px;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#filter:hover {
+    background-color: transparent;
+}
+
+.task-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+/* Complete and delete task */
+
+.task {
+    font-size: 22px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all .6s ease;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.check {
+    position: absolute;
+    top: -14px;
+    left: -2px;
+    font-size: 30px;
+    display: none;
+    pointer-events: none;
+}
+
+.delete {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.fa-trash {
+    pointer-events: none;
+}
+
+.complete {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
